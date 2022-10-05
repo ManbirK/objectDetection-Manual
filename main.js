@@ -1,28 +1,36 @@
 function preload() {
-    image_dog_cat = loadImage("dog_cat.jpg");
+
+    img_dog_cat = loadImage("dog_cat.jpg");
 }
 
 function setup() {
-    canvas = createCanvas(700, 500);
+    canvas = createCanvas(600, 400);
+    background("green");
     canvas.center();
-
 
 }
 
 function draw() {
-    image(image_dog_cat, 0, 0, 700, 500);
-   noFill();
-    stroke("green");
-    rect( 330,40,300,450);
-    fill("green");
-    textSize(30);
-    text("Cat", 340,70);
+    image(img_dog_cat,0,0,600,400);
+    strokeWeight(3);
 
-
+    stroke("blue");
     noFill();
-    stroke("green");
-    rect( 130,40,300,450);
-    fill("green");
+    //rect(x,y,width,height);
+    rect(100,80,200,250);
+
     textSize(30);
-    text("Dog", 140,70);
+    //text("text to be shown", x,y);
+    text("Dog 80%",100,60);
+
+    
+    stroke("green");
+    noFill();
+    //rect(x,y,width,height);
+    rect(300,80,218,250);
+    textSize(30);
+    //text("text to be shown", x,y);
+    text("Cat 88%",300,70);
+
+
 }
